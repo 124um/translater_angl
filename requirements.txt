@@ -1,0 +1,10 @@
+# macOS Live Subtitles Overlay Dependencies
+# Core audio processing
+sounddevice>=0.4.6
+numpy>=1.21.0
+
+# Primary ASR engine (faster, more efficient)
+faster-whisper>=0.9.0
+
+# Note: torch and openai-whisper have compatibility issues with Python 3.13
+# Using only faster-whisper which works well on macOS 
